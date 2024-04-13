@@ -1,0 +1,18 @@
+<section class="project">
+    <div class="w-80">
+        <app-header class="header"></app-header>
+        <div class="title">
+            <button (click)="goBack()"><img src="../../../assets/go-back.svg" alt="go-back"/></button>
+            <div class="title-and-line">
+                <h2>{{project?.name}}</h2>
+                <hr class="line"/>
+            </div>
+        </div>
+        <div class="project-details">
+            <p>{{project?.description}}</p>
+            <img src="../../../assets/{{project?.img}}" alt="{{project?.name}}"/>
+        </div>
+        <div class="project-pictures"></div>
+    </div>
+   
+</section>

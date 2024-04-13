@@ -1,0 +1,37 @@
+@import "../../../styles/color-variables.scss";
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        display: flex;
+        align-items: center;
+    }
+    h3 {
+        margin: 0;
+        padding: 0;
+        color: $accent-color;
+    }
+    .logo span {
+       color: $primary-color;
+    }
+
+    nav {
+        display: flex;
+        ol {
+            display: flex;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: $accent-color;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<section class="work">
+    <img class="blob blob-violet" src = "../../assets/blob-violet.svg" alt="blob-violet"/>
+    <div class="title">
+        <div class="title-and-line">
+            <h2>Work.</h2>
+            <hr class="line"/>
+        </div>
+        <div class="buttons">
+            <button [ngClass]="{'btn-active': isDesign}" class="btn btn-active" (click)="onDesignClick()">Design</button>
+            <button [ngClass]="{'btn-active': !isDesign}" class="btn" (click)="onDevClick()">Développement</button>
+        </div>
+    </div>
+    <div class="projects">
+        @for (project of projects; track project.id) {
+            <app-card [project]="project"></app-card>
+        }
+    </div>
+</section>
