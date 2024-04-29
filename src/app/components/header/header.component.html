@@ -1,9 +1,8 @@
 <header>
-  <div class="logo" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
-    <span>:</span>
-    <h3 #logo>NR</h3>
-    <span>></span>
-  </div>
+  <a class="logo" (mouseover)="isHovered = true" (mouseleave)="isHovered = false">
+      <img src="../../../assets/me.svg" alt="me-logo" [class.hidden]="isHovered">
+      <img src="../../../assets/me-smile.svg" alt="me-hi-logo" [class.hidden]="!isHovered">
+  </a>
   <nav class="nav">
     <ol>
       <li class="nav-item">
@@ -13,7 +12,7 @@
         <a href="#work">Work &#8212;</a>
       </li>
       <li class="nav-item">
-        <a href="#about">About</a>
+        <a (click)="scrollToAbout()" href="#about">About</a>
       </li>
     </ol>
   </nav>

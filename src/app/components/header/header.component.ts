@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,12 +9,19 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor() {}
   @ViewChild('logo') logo!: ElementRef<HTMLInputElement>;
-  onMouseEnter() {
-    this.logo.nativeElement.textContent = 'Natacha Rome';
+  @ViewChild('about') aboutSection!: ElementRef;
+  constructor(private router: Router) {}
+
+  isHovered = false;
+
+  navigateToHome() {
+    this.router.navigate(['']);
   }
-  onMouseLeave() {
-    this.logo.nativeElement.textContent = 'NR';
+  scrollToAbout(): void {
+    this.aboutSection.nativeElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
   }
 }

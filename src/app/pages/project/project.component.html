@@ -9,10 +9,12 @@
             </div>
         </div>
         <div class="project-details">
-            <p>{{project?.description}}</p>
-            <img src="../../../assets/{{project?.img}}" alt="{{project?.name}}"/>
+            <p>{{project?.description}}</p>        
         </div>
-        <div class="project-pictures"></div>
+        <div class="project-pictures">
+            @for (img of project?.projectImages; track img) {
+                <img class="project-image" src="../../../assets/projects/test/{{img}}" alt="test"/>
+            }
+        </div>
     </div>
-   
 </section>

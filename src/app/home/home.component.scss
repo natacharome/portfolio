@@ -1,3 +1,4 @@
+
 .home {
     display: flex;
     flex-direction: column;
@@ -59,6 +60,20 @@
         }
     }
 }
+
+.hello {
+    animation: rotate 40s ease infinite alternate;
+}
+
+@keyframes rotate{
+    0% {
+       transform: rotate( 0deg ) scale( 1 );
+     }
+     100% {
+       transform: rotate( 360deg );
+     }
+}
+
 
 
 @keyframes bounce{
