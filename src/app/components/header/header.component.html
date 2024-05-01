@@ -1,4 +1,4 @@
-<header>
+<header class="home">
   <a class="logo" (mouseover)="isHovered = true" (mouseleave)="isHovered = false" href="/">
       <img src="../../../assets/me.svg" alt="me-logo" [class.hidden]="isHovered">
       <img src="../../../assets/me-smile.svg" alt="me-hi-logo" [class.hidden]="!isHovered">
@@ -12,7 +12,7 @@
         <a href="#work">Work &#8212;</a>
       </li>
       <li class="nav-item">
-        <a (click)="scrollToAbout()" href="#about">About</a>
+        <a href="#about">About</a>
       </li>
     </ol>
   </nav>

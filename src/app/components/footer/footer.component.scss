@@ -1,0 +1,13 @@
+@import "../../../styles/color-variables.scss";
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px 50px;
+    margin-top: 90px;
+}
