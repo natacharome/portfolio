@@ -3,13 +3,14 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { HeaderComponent } from '../../components/header/header.component';
 import { Project } from '../../utils/interfaces/project';
 import { projects_data } from '../../utils/projects-data';
+import { FooterComponent } from "../../components/footer/footer.component";
 
 @Component({
-  selector: 'app-project',
-  standalone: true,
-  templateUrl: './project.component.html',
-  styleUrl: './project.component.scss',
-  imports: [HeaderComponent],
+    selector: 'app-project',
+    standalone: true,
+    templateUrl: './project.component.html',
+    styleUrl: './project.component.scss',
+    imports: [HeaderComponent, FooterComponent]
 })
 export class ProjectComponent implements OnInit {
   project!: Project | undefined;

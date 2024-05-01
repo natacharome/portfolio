@@ -2,14 +2,14 @@
 .work {
     display: flex; 
     width: 100%;
-    
+
     .blob {
         position: absolute;
         z-index: -1;
     }
 
     .blob-violet {
-        right: -500px;
+        display: none; // todo: a changer
         top:800px;
         animation: bounce 20s ease infinite alternate;
     }

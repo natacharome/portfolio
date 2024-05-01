@@ -110,6 +110,12 @@
       justify-content: center;
     } 
     .home {
+        .blob-right {
+            width: 250px;
+        }
+        .blob-left {
+            width: 300px;
+        }
         .title {
             flex-grow: 0.6;
         }

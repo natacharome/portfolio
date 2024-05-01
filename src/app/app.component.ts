@@ -23,13 +23,12 @@ export class AppComponent {
   isDarkTheme: boolean = false;
 
   toggleDarkTheme(): void {
+    this.isDarkTheme = !this.isDarkTheme;
     const main = document.getElementById('main');
-    if (main?.classList.contains('dark')) {
-      main.classList.remove('dark');
-      main.classList.add('light');
-    } else {
-      main?.classList.add('dark');
-      main?.classList.remove('light');
+    if (main) {
+      main.classList.toggle('dark', this.isDarkTheme);
+      main.classList.toggle('light', !this.isDarkTheme);
     }
+    localStorage.setItem('darkMode', this.isDarkTheme ? 'true' : 'false');
   }
 }
