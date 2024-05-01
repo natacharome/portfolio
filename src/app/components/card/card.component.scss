@@ -11,6 +11,7 @@
     backdrop-filter: blur(5px);
     padding:30px;
     border: 1px solid rgba(238, 93, 93, 0.136);
+    transition: 0.3s;
 
     .image {
     width: 100%;
@@ -49,5 +50,9 @@
             }
         }
     }
-   
+}
+
+.card:hover {
+    border: 1px solid rgba(238, 93, 93, 0.468);
+    box-shadow: 0 0 10px rgba(238, 93, 93, 0.468);
 }

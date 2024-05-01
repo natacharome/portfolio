@@ -13,6 +13,7 @@ export class CardComponent {
   constructor(private router: Router) {}
   @Input() project!: Project;
   onCardClick(id: number) {
+    console.log('here');
     this.router.navigate(['/project', id]);
   }
 }

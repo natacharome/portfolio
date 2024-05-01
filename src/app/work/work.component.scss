@@ -2,7 +2,7 @@
 .work {
     display: flex; 
     width: 100%;
-
+    
     .blob {
         position: absolute;
         z-index: -1;
@@ -58,3 +58,13 @@
         }
     }
 }
+
+@media screen and (max-width: 1244px) {
+    .work {
+      flex-direction: column;
+      .projects {
+        justify-content: center;
+      }
+    } 
+ 
+  }

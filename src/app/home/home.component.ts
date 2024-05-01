@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AboutComponent } from '../about/about.component';
 import { HeaderComponent } from "../components/header/header.component";
-import { WorkComponent } from "../work/work.component";
-import { AboutComponent } from "../about/about.component";
+import { WorkComponent } from '../work/work.component';
 
 @Component({
     selector: 'app-home',
