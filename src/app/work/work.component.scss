@@ -37,6 +37,14 @@
     .projects {
         display: flex;
         flex-wrap: wrap;
+
+        .empty {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 25px;
+            font-size: 20px;
+        }
     }
 
     .buttons {

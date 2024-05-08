@@ -31,15 +31,5 @@ export const projects_data: Project[] = [
     tags: ['UI', 'Branding', 'Design'],
     category: 'design',
     projectImages: ['repulsif.png','r1.png', 'r2.png', 'r3.png', 'r4.png', 'r5.png'],
-  },
-  {
-    id: 4,
-    name: 'Until App',
-    description: 'Description du projet 2',
-    img: 'baggi.jpg',
-    link: 'https://www.google.com',
-    tags: ['UX/UI', 'ReBranding', 'Design'],
-    category: 'dev',
-    projectImages: ['1.jpg', '2.jpg', '3.jpg'],
-  },
+  }
 ];
