@@ -2,7 +2,8 @@
 .work {
     display: flex; 
     width: 100%;
-
+    padding-top: 50px;
+    
     .blob {
         position: absolute;
         z-index: -1;
