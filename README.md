@@ -13,5 +13,3 @@ This is my personal portfolio, developed in Angular and made by hand. Without an
 `npm install`
 
 `npm run start`
-
-## TODO
