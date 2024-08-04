@@ -2,17 +2,19 @@
 .card{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-around;
     border-radius: 10px;
     margin: 20px;
     backdrop-filter: blur(5px);
     transition: 0.3s;
-    height: 70vh;
+    padding: 0 10%;
+    cursor: pointer;
 
     .image {
     height: 460px;
     overflow: hidden;
     border-radius: 10px;
+    min-width: 50%;
     
      img {
         object-fit: contain;
@@ -49,6 +51,11 @@
     .card {
         height: auto;
         flex-direction: column;
+        padding: 0;
+    }
+
+    .image {
+        height: 200px;
     }
  
   }

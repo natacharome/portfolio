@@ -1,10 +1,16 @@
 @import "../../../styles/color-variables.scss";
 
 footer {
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     svg {
         path {
             fill: $primary-color;
         }   
+        padding: 0 5px;
     }
+    background: $pink-light;
+    margin-top: 50px;
+    padding: 20px;
 }
