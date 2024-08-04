@@ -11,10 +11,12 @@
         </div>
     </div>
     <div class="projects">
-        @for (project of projects; track project.id) {
-            <app-card [project]="project"></app-card>
-        } @empty {
-            <h3 class="empty">Il n'y actuellement aucun projet dans cette catégorie.</h3>
-        }
+        <div class="project-cards">
+            @for (project of projects; track project.id; let idx = $index) {
+                <app-card [isOdd]="idx % 2 === 0" [project]="project"></app-card>
+            } @empty {
+                <h3 class="empty">Il n'y actuellement aucun projet dans cette catégorie.</h3>
+            }
+        </div>
     </div>
 </section>

@@ -12,7 +12,9 @@ import { Project } from '../../utils/interfaces/project';
 export class CardComponent {
   constructor(private router: Router) {}
   @Input() project!: Project;
-  onCardClick(id: number) {
-    this.router.navigate(['/project', id]);
+  @Input() isOdd!: boolean;
+  async onCardClick(id: number) {
+    await this.router.navigate(['/project', id]);
+    window.scrollTo(0, 0);
   }
 }

@@ -1,6 +1,7 @@
 @import "../../styles/color-variables.scss";
 .work {
-    display: flex; 
+    display: flex;
+    flex-direction: column; 
     width: 100%;
     padding-top: 50px;
     
@@ -37,7 +38,17 @@
 
     .projects {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
+        .project-cards {
+            display: flex;
+            flex-direction: column;
+            .card > .reverse {
+                background-color: #FF5170;
+                flex-direction: row-reverse;
+            }
+        }
 
         .empty {
             display: flex;
@@ -67,13 +78,3 @@
         }
     }
 }
-
-@media screen and (max-width: 1244px) {
-    .work {
-      flex-direction: column;
-      .projects {
-        justify-content: center;
-      }
-    } 
- 
-  }

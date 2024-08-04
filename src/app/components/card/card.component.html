@@ -1,13 +1,10 @@
-<div class="card" (click)="onCardClick(project.id)">
+<div (click)="onCardClick(project.id)" class="card {{isOdd ? 'card-odd' : 'card-even'}}">
     <div class="image">
         <img class="project-image" src="../../../assets/projects/{{project.img}}" alt="{{project.name}}"/>
     </div>
     <div class="card-details">
-        <h3 class="project-title">{{project.name}}</h3>
-        <div class="tags">
-            @for (tag of project.tags; track project.id) {
-                <p class="tag">{{tag}}</p>
-            }
-        </div>
+        <h3>{{project.name}}</h3>
+        <p>{{project.subtitle}}</p>
+        <button class="btn-light" (click)="onCardClick(project.id)">Découvrir le projet</button>
     </div>
 </div>

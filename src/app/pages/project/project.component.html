@@ -8,9 +8,19 @@
                 <hr class="line"/>
             </div>
         </div>
+        <div class="tags">
+            @for (tag of project?.tags; track tag) {
+                <div class="tag">{{ tag }}</div>
+            }
+        </div>
         <div class="project-details">
             <p>{{project?.description}}</p>        
         </div>
+        @if(project?.link) {
+            <div class="link">
+                <a class="btn-light" [href]="project?.link" target="_blank">Lien du site</a>
+            </div>
+        }
         <div class="project-pictures">
             @for (img of project?.projectImages; track img) {
                 <img class="project-image" src="../../../assets/projects/{{img}}" alt="test"/>
