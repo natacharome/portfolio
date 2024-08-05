@@ -91,6 +91,7 @@ export const projects_data: Project[] = [
     tags: ['Netlify', 'ReactJS', 'Airtable', 'UI Design', 'OVH'],
     category: 'dev',
     projectImages: ['tambouille.webp'],
+    githubLink: 'https://github.com/natacharome/la-tambouille-vegetale',
   },
   {
     id: 6,
@@ -101,9 +102,10 @@ export const projects_data: Project[] = [
       'Création du design du site puis développement from scratch avec le framework Angular',
     img: 'portfolio.webp',
     tasks: ['Création du site de zéro', 'Création du design'],
-    link: '',
+    link: 'https://natacharome.fr',
     tags: ['Netlify', 'Angular 17', 'UI Design'],
     category: 'dev',
     projectImages: ['portfolio.webp'],
+    githubLink: 'https://github.com/natacharome/portfolio',
   },
 ];

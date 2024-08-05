@@ -78,3 +78,15 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .work {
+        .buttons {
+            flex-wrap: wrap;
+    
+            .btn {
+              margin: 10px 10px;
+            }
+        }
+    }
+}

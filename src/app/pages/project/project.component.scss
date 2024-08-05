@@ -7,28 +7,51 @@
   width: 100vw;
   height: 100Vh;
 
-  .link {
+  .project-details {
+    padding: 20px;
+}
+
+  .project-links {
     display: flex;
 
-    .btn-light {
-      margin-top: 30px;
-      padding: 20px 27px;
-      background-color: $pink-light;
-      border: none;
-      border-radius: 11px;
-      cursor: pointer;
-      transition: 0.3s;
-      color: $primary-color;
-      text-decoration: none;
-    }
+    .link {
+      display: flex;
+      margin-right:20px;
   
-    .btn-light:hover {
-      background-color: #e9d3d6;
+      .btn-light {
+        margin-top: 30px;
+        padding: 20px 27px;
+        background-color: $pink-light;
+        border: none;
+        border-radius: 11px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: $primary-color;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        margin-top: 30px;
+        padding: 20px 27px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 11px;
+        cursor: pointer;
+        transition: 0.3s;
+        color: white;
+        text-decoration: none;
+      }
+    
+      .btn-light:hover {
+        background-color: #e9d3d6;
+      }
+
+      .btn-primary:hover {
+        background-color: #d5425d;
+      }
     }
   }
-
-  
-
+ 
   h2 {
     line-height: 0.7;
   }
@@ -56,7 +79,7 @@
   }
 
   .title-and-line {
-    width: 250px;
+    width: 450px;
   }
 
   .line {
@@ -93,5 +116,14 @@
       border-radius: 30px;
     }
   }
+}
 
+@media screen and (max-width: 600px) {
+  .project {
+  
+    .title-and-line {
+      width: 200px;
+    }
+  }
+ 
 }

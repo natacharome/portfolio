@@ -9,7 +9,6 @@
     transition: 0.3s;
     padding: 0 10%;
 
-      
     .image {
     height: 460px;
     overflow: hidden;
@@ -52,10 +51,8 @@
         height: auto;
         flex-direction: column;
         padding: 0;
+        .image {
+            height: 200px;
+        }
     }
-
-    .image {
-        height: 200px;
-    }
- 
   }

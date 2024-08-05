@@ -8,18 +8,27 @@
                 <hr class="line"/>
             </div>
         </div>
+        <div class="project-details">
+            <p>{{project?.description}}</p>        
+        </div>
         <div class="tags">
             @for (tag of project?.tags; track tag) {
                 <div class="tag">{{ tag }}</div>
             }
         </div>
-        <div class="project-details">
-            <p>{{project?.description}}</p>        
-        </div>
         @if(project?.link) {
-            <div class="link">
-                <a class="btn-light" [href]="project?.link" target="_blank">Lien du site</a>
+            <div class="project-links">
+                <div class="link">
+                    <a class="btn-primary" [href]="project?.link" target="_blank">Voir le site</a>
+                </div>
+                @if(project?.githubLink) {
+                    <div class="link">
+                        <a class="btn-light" [href]="project?.githubLink" target="_blank">Projet github</a>
+                    </div>
+                }
+                
             </div>
+         
         }
         <div class="project-pictures">
             @for (img of project?.projectImages; track img) {
