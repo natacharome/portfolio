@@ -17,4 +17,23 @@ export class CardComponent {
     await this.router.navigate(['/project', id]);
     window.scrollTo(0, 0);
   }
+  isVoirTextVisible: boolean = false;
+  voirTextPosition = { x: 0, y: 0 };
+
+  showVoirText(event: MouseEvent) {
+    this.isVoirTextVisible = true;
+    this.updateVoirTextPosition(event);
+  }
+
+  hideVoirText() {
+    this.isVoirTextVisible = false;
+  }
+
+  updateVoirTextPosition(event: MouseEvent) {
+    const rect = (event.target as HTMLElement).getBoundingClientRect();
+    this.voirTextPosition = {
+      x: event.clientX - rect.left,
+      y: event.clientY - rect.top,
+    };
+  }
 }
