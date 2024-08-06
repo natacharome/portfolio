@@ -111,6 +111,7 @@
       justify-content: center;
     } 
     .home {
+        height: 80vh;
         .blob-right {
             width: 250px;
         }
@@ -132,7 +133,13 @@
             line-height: 0.45;
         }
         .hello {
-            bottom: 118px;
+            display: none;
+        }
+        .title-section {
+            p {
+             font-size:16px;
+            }
+            
         }
     }
  
